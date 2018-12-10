@@ -1,0 +1,43 @@
+@keyframes color {
+      from{
+          background-color: #dddddd;
+      }
+      to{
+          background-color: #999999;
+      }
+  }
+@keyframes color_two {
+
+    0%{
+        background-color: red;
+        color:  blue;
+    }
+    14%{
+        background-color: orange;
+        color: violet;
+    }
+    28%{
+        background-color: yellow;
+        color: red;
+    }
+    42%{
+        background-color: green;
+        color: orange;
+    }
+    56%{
+        background-color: #0088FF;
+        color: green;
+    }
+    70%{
+        background-color:  blue;
+        color: yellow;
+    }
+    84%{
+        background-color: violet;
+        color: #0088FF ;
+    }
+    100%{
+        background-color: red;
+        color: blue;
+    }
+}

@@ -1,0 +1,161 @@
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,calc(100%/12));
+    grid-template-rows: repeat(8,calc(100%/8));
+    perspective: 1000px;
+    transform-style: preserve-3d;
+
+}
+.main{
+    grid-row: 4;
+    grid-column: 2 / 4;
+}
+.front_main, .front_photo, .front_portfolio, .front_contacts{
+    transform: translateZ(1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo{
+    grid-column: 5;
+    grid-row: 3 / 6;
+}
+#vertical{
+    transform: rotateZ(270deg);
+}
+.portfolio{
+    grid-column: 7 / 9;
+    grid-row: 6;
+}
+.contacts{
+    grid-column: 9 / 11;
+    grid-row: 4;
+}
+span{
+    font-size: 1.5em;
+    white-space: pre;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div{
+    background-color: #bbbbbb;
+}
+.container {
+    transform-style: preserve-3d;
+    transform: rotateY(0deg) translateZ(0px) rotateX(0deg) translateX(0px);
+    border: 1px black;
+    transition-duration: 300ms;
+}
+.side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0.1pt solid black;
+}
+.left {
+    transform: translateX(0.5%) rotateY(90deg);
+    transform-origin: left;
+    background-color: #555555;
+}
+.right {
+    transform: translateX(-1%) rotateY(-90deg);
+    transform-origin: right;
+    background-color: #555555;
+}
+.top {
+    transform: translateY(0) rotateX(-90deg);
+    transform-origin: top;
+    background-color: #555555;
+}
+.bottom {
+    transform: translateY(0%) rotateX(90deg);
+    transform-origin: bottom;
+    background-color: #555555;
+}
+.front {
+    transform: translateZ(1px);
+}
+.main:hover{
+    transform-style: preserve-3d;
+    transform: translateZ(50px);
+    transition-duration: 300ms;
+    box-shadow: 0px -5px 50px -5px black;
+}
+.photo:hover{
+    transform-style: preserve-3d;
+    transform: translateZ(50px);
+    transition-duration: 300ms;
+    box-shadow: 0px -5px 50px -5px black;
+}
+.portfolio:hover{
+    transform-style: preserve-3d;
+    transform: translateZ(50px);
+    transition-duration: 300ms;
+    box-shadow: 0px -5px 50px -5px black;
+}
+.contacts:hover{
+    transform-style: preserve-3d;
+    transform: translateZ(50px);
+    transition-duration: 300ms;
+    box-shadow: 0px -5px 50px -5px black;
+}
+.front{
+    animation-name:color;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-duration: 3s;
+}
+.one{
+    animation-name:color;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-duration: 5s;
+}
+.two, .front_main, .front_photo, .front_portfolio, .front_contacts{
+    animation-name:color;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-duration: 3s;
+}
+.contacts:hover>.front_contacts{
+    animation-name:color_two;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-delay: -500ms;
+}
+.main:hover>.front_main{
+    animation-name:color_two;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-delay: -500ms;
+}
+.photo:hover>.front_photo{
+    animation-name:color_two;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-delay: -500ms;
+}
+.portfolio:hover>.front_portfolio{
+    animation-name:color_two;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-delay: -500ms;
+}
