@@ -119,14 +119,14 @@ div{
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: alternate;
-    animation-duration: 5s;
+    animation-duration: 2s;
 }
 .two, .front_main, .front_photo, .front_portfolio, .front_contacts{
     animation-name:color;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-direction: alternate;
-    animation-duration: 3s;
+    animation-duration: 1s;
 }
 .contacts:hover>.front_contacts{
     animation-name:color_two;
