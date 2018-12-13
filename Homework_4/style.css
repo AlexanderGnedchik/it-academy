@@ -8,7 +8,9 @@ body{
     grid-template-rows: repeat(8,calc(100%/8));
     perspective: 1000px;
     transform-style: preserve-3d;
-    background: #555555;
+    background: black;
+    grid-gap: 1px;
+
 
 }
 .main{
@@ -58,7 +60,7 @@ div{
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 0.1pt solid black;
+
 }
 .left {
     transform: translateX(0.5%) rotateY(90deg);
