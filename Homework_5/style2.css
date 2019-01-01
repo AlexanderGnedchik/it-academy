@@ -127,14 +127,15 @@ input[type="date"]::-webkit-inner-spin-button {
     display: none;
 
 }
+input:active{
+    border: 1px solid blue;
+}
 
 select{
     background: url("images/arrow.svg") no-repeat 98% ;
     -webkit-appearance: none;
     display: block;
     height: 40px;
-
-
 }
 
 @media (min-width: 620px) {
