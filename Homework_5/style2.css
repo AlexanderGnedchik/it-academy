@@ -77,6 +77,7 @@ textarea{
     height: 100px;
     box-sizing: border-box;
     border: 1px solid dodgerblue;
+    resize: vertical;
 }
 input[type='checkbox']{
     width: auto;
