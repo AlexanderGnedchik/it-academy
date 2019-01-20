@@ -9,7 +9,7 @@
     person.output = Output();
 
     function inputName() {
-        let name = prompt(`Enter first name: `);
+        let name = prompt(`Введите имя: `);
         if ( name === null || name===``){
             return null;
         }
@@ -18,7 +18,7 @@
         }
     }
     function inputSname() {
-        let name = prompt(`Enter Second name: `);
+        let name = prompt(`Введите фамилию: `);
         if ( name === null || name===``){
             return null;
         }
@@ -27,8 +27,8 @@
         }
     }
     function inputSex() {
-            let sex = prompt(`Enter sex`);
-            if (sex===`M` || sex ===`F`|| sex ===`m` || sex ===`f`) {
+            let sex = prompt(`Введите пол: `);
+            if (sex===`М` || sex ===`Ж`|| sex ===`м` || sex ===`ж`) {
                 return sex;
             }
             else if(sex===``){
@@ -40,7 +40,7 @@
             }
         }
     function inputAge() {
-        let age = prompt(`Enter age `);
+        let age = prompt(`Введите возраст `);
         if (age === null) {
             return null;
         }
@@ -62,11 +62,11 @@
     function Output() {
         if(person.age!==null && person.firstName!==null && person.secondName!==null){
 
-            if(person.age>=63 && person.sex===`F`|| person.age>=58 && person.sex===`M` || person.age>=63 && person.sex===`f`|| person.age>=58 && person.sex===`m`){
-                alert(`Полное имя: ` + person.firstName + ` ` + person.secondName + `\n`+`Age: `+ person.age + `\n` + `Sex: ` + person.sex + `\n` + `Пенсия: yes`);
+            if(person.age>=63 && person.sex===`М`|| person.age>=58 && person.sex===`м` || person.age>=63 && person.sex===`Ж`|| person.age>=58 && person.sex===`ж`){
+                alert(`Полное имя: ` + person.firstName + ` ` + person.secondName + `\n`+`Возраст: `+ person.age + `\n` + `Пол: ` + person.sex + `\n` + `Пенсия: да`);
             }
             else {
-                alert(`Полное имя: ` + person.firstName + ` ` + person.secondName + `\n`+`Age: `+ person.age + `\n` + `Sex: ` + person.sex + `\n` + `Пенсия: no`);
+                alert(`Полное имя: ` + person.firstName + ` ` + person.secondName + `\n`+`Возраст: `+ person.age + `\n` + `Пол: ` + person.sex + `\n` + `Пенсия: нет`);
             }
         }
         else {
