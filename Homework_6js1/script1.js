@@ -60,7 +60,7 @@
     }
 
     function Output() {
-        if(person.age!==null && person.firstName!==null && person.secondName!==null){
+        if(person.age!==null && person.firstName!==null && person.secondName!==null && person.gender!==null){
 
             if(person.age>=63 && person.gender===`М`|| person.age>=58 && person.gender===`м` || person.age>=63 && person.gender===`Ж`|| person.age>=58 && person.gender===`ж`){
                 alert(`Полное имя: ` + person.firstName + ` ` + person.secondName + `\n`+`Возраст: `+ person.age + `\n` + `Пол: ` + person.gender + `\n` + `Пенсия: да`);
