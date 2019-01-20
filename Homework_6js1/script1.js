@@ -51,7 +51,7 @@
         do {
             result = inputAge();
         } while (result !== null && !isFinite(result));
-        if(result>0){
+        if(result>0 && result <130){
             return result;
         }
         else {
